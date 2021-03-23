@@ -5,6 +5,8 @@
 h1 {
   display: flex;
   justify-content: center;
+  grid-column: 6 / 8;
+  grid-row: 1;
 }
 .grid-container {
   display: grid;
@@ -26,7 +28,6 @@ h1 {
   grid-column: 1 / span 12;
   grid-row: 3;
   background-color: white;
-  text-decoration: line-through;
   font-size: 30px;
   text-align: center;
   border: 1px solid black;
@@ -47,7 +48,6 @@ h1 {
 .menu {
   display: flex;
   flex-direction: row;
-  float: left;
   list-style: none;
   justify-content: space-around;
   align-items: center;
@@ -59,9 +59,17 @@ h1 {
   padding: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
 [class*="col-"] {
   float: left;
+  background-color: white;
   border: 1px solid black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .col-1 { width: 8.33%; }
